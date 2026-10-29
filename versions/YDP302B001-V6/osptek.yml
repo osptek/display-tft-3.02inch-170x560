@@ -1,0 +1,10 @@
+id: YDP302B001-V6
+category: displays
+size: "3.02"
+panel: tft
+resolution: 170x560
+interface: [spi]
+driver: AXS15231B
+touch: null
+outline: 24.63 x 78.41 mm
+active_area: 22.134 x 72.912 mm

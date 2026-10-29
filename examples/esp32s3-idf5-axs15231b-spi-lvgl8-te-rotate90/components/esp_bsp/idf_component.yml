@@ -1,0 +1,6 @@
+dependencies:
+  idf: ">=4.4"
+
+  espressif/esp_lcd_axs15231b:
+    version: "2.1.*"
+    public: true
