@@ -1,0 +1,10 @@
+id: YDP302BT003-V1A
+category: displays
+size: "3.02"
+panel: tft
+resolution: 170x560
+interface: [qspi, spi]
+driver: AXS15231E
+touch: AXS15231E
+outline: 31.50 x 85.60 x 2.72 mm
+active_area: 22.134 x 72.912 mm
