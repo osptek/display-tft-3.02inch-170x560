@@ -46,6 +46,7 @@
 | Datasheet | [`AXS15231E_Datasheet_V0.3_20251209-客户版 .pdf`](./datasheets/AXS15231E_Datasheet_V0.3_20251209-%E5%AE%A2%E6%88%B7%E7%89%88%20.pdf) |
 | Datasheet | [`YDP302BT003-V1A.pdf`](./datasheets/YDP302BT003-V1A.pdf) |
 | CAD file | [`YDP302BT003-V1A.dwg`](./cad/YDP302BT003-V1A.dwg) |
+| Adapter materials | [`PCB-3.02 TFT转接板V2.0.pdf`](./adapter/PCB-3.02%20TFT%E8%BD%AC%E6%8E%A5%E6%9D%BFV2.0.pdf) |
 
 ## Repository layout
 
@@ -58,7 +59,8 @@ display-tft-3.02inch-170x560/ # repo root (nav: ../../README_EN.md; sample proje
         ├── osptek.yml
         ├── images/
         ├── datasheets/       # product datasheet + driver/touch IC datasheets
-        └── cad/              # outline/cover CAD
+        ├── cad/              # outline/cover CAD
+        └── adapter/          # adapter board materials + photos
 ```
 
 ## Buy

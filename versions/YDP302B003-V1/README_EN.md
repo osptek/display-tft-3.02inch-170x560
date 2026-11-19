@@ -47,7 +47,7 @@
 | Datasheet | [`YDP302B003-V1.pdf`](./datasheets/YDP302B003-V1.pdf) |
 | CAD file | [`YDP302B003-V1.dwg`](./cad/YDP302B003-V1.dwg) |
 | CAD file | [`YDP302B003-V1_外形图.pdf`](./cad/YDP302B003-V1_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
-| CAD file | [`YDP302BT003-V1(20260331).dwg`](./cad/YDP302BT003-V1%2820260331%29.dwg) |
+| Adapter materials | [`PCB-3.02 TFT转接板V2.0.pdf`](./adapter/PCB-3.02%20TFT%E8%BD%AC%E6%8E%A5%E6%9D%BFV2.0.pdf) |
 
 ## Repository layout
 
@@ -60,7 +60,8 @@ display-tft-3.02inch-170x560/ # repo root (nav: ../../README_EN.md; sample proje
         ├── osptek.yml
         ├── images/
         ├── datasheets/       # product datasheet + driver/touch IC datasheets
-        └── cad/              # outline/cover CAD
+        ├── cad/              # outline/cover CAD
+        └── adapter/          # adapter board materials + photos
 ```
 
 ## Buy

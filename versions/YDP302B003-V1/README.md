@@ -47,7 +47,7 @@
 | 规格文档 | [`YDP302B003-V1.pdf`](./datasheets/YDP302B003-V1.pdf) |
 | CAD 图纸 | [`YDP302B003-V1.dwg`](./cad/YDP302B003-V1.dwg) |
 | CAD 图纸 | [`YDP302B003-V1_外形图.pdf`](./cad/YDP302B003-V1_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
-| CAD 图纸 | [`YDP302BT003-V1(20260331).dwg`](./cad/YDP302BT003-V1%2820260331%29.dwg) |
+| 转接板资料 | [`PCB-3.02 TFT转接板V2.0.pdf`](./adapter/PCB-3.02%20TFT%E8%BD%AC%E6%8E%A5%E6%9D%BFV2.0.pdf) |
 
 ## 仓库结构
 
@@ -60,7 +60,8 @@ display-tft-3.02inch-170x560/ # 仓库根（导航见 ../../README.md，示例�
         ├── osptek.yml
         ├── images/
         ├── datasheets/       # 产品规格书 + 驱动/触摸 IC 数据手册
-        └── cad/              # 外形/盖板 CAD
+        ├── cad/              # 外形/盖板 CAD
+        └── adapter/          # 转接板资料 + 转接板图片
 ```
 
 ## 购买链接

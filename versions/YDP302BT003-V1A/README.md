@@ -46,6 +46,7 @@
 | 规格文档 | [`AXS15231E_Datasheet_V0.3_20251209-客户版 .pdf`](./datasheets/AXS15231E_Datasheet_V0.3_20251209-%E5%AE%A2%E6%88%B7%E7%89%88%20.pdf) |
 | 规格文档 | [`YDP302BT003-V1A.pdf`](./datasheets/YDP302BT003-V1A.pdf) |
 | CAD 图纸 | [`YDP302BT003-V1A.dwg`](./cad/YDP302BT003-V1A.dwg) |
+| 转接板资料 | [`PCB-3.02 TFT转接板V2.0.pdf`](./adapter/PCB-3.02%20TFT%E8%BD%AC%E6%8E%A5%E6%9D%BFV2.0.pdf) |
 
 ## 仓库结构
 
@@ -58,7 +59,8 @@ display-tft-3.02inch-170x560/ # 仓库根（导航见 ../../README.md，示例�
         ├── osptek.yml
         ├── images/
         ├── datasheets/       # 产品规格书 + 驱动/触摸 IC 数据手册
-        └── cad/              # 外形/盖板 CAD
+        ├── cad/              # 外形/盖板 CAD
+        └── adapter/          # 转接板资料 + 转接板图片
 ```
 
 ## 购买链接
