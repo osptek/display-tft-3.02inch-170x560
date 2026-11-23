@@ -1,0 +1,10 @@
+dependencies:
+  idf:
+    version: '>=5.3.0'
+  lvgl/lvgl:
+    version: "^9.6"
+    public: true
+  # Panel/touch IC is AXS15231E; Espressif only publishes the B component.
+  espressif/esp_lcd_axs15231b:
+    version: "2.1.*"
+    public: true

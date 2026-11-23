@@ -1,0 +1,6 @@
+# No options: this only turns on the LVGL features the animation needs
+config LV_OSPTEK_BOOT_ANIM_DEPS
+    bool
+    default y
+    select LV_USE_TINY_TTF
+    select LV_USE_FLEX

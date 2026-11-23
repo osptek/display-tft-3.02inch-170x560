@@ -1,0 +1,59 @@
+#pragma once
+
+#include "driver/gpio.h"
+
+/* ===== 只改这里 =====
+ * BOARD_LCD_IF:      BOARD_LCD_IF_SPI | BOARD_LCD_IF_QSPI
+ * BOARD_LCD_ORIENT:  BOARD_LCD_ORIENT_PORTRAIT | BOARD_LCD_ORIENT_ROTATE90
+ *                    | BOARD_LCD_ORIENT_ROTATE270
+ * BOARD_ENABLE_TOUCH: 1 / 0
+ */
+#define BOARD_LCD_IF              BOARD_LCD_IF_QSPI
+#define BOARD_LCD_ORIENT          BOARD_LCD_ORIENT_ROTATE90
+#define BOARD_ENABLE_TOUCH        (1)
+
+/* ===== 下面不用改 ===== */
+
+#define BOARD_LCD_IF_SPI              0
+#define BOARD_LCD_IF_QSPI             1
+#define BOARD_LCD_ORIENT_PORTRAIT     0
+#define BOARD_LCD_ORIENT_ROTATE90     1
+#define BOARD_LCD_ORIENT_ROTATE270    2
+
+#define BOARD_LCD_USE_QSPI            (BOARD_LCD_IF == BOARD_LCD_IF_QSPI)
+#define BOARD_LCD_HW_ROTATE90         (BOARD_LCD_ORIENT == BOARD_LCD_ORIENT_ROTATE90 || \
+                                       BOARD_LCD_ORIENT == BOARD_LCD_ORIENT_ROTATE270)
+#define BOARD_LCD_HW_ROTATE270        (BOARD_LCD_ORIENT == BOARD_LCD_ORIENT_ROTATE270)
+
+#if BOARD_LCD_HW_ROTATE90
+#define BOARD_LCD_H_RES           (560)
+#define BOARD_LCD_V_RES           (170)
+#else
+#define BOARD_LCD_H_RES           (170)
+#define BOARD_LCD_V_RES           (560)
+#endif
+
+/* 触摸 IC 原始坐标为 560x170，原生方向对应 LCD ROTATE90。 */
+#define BOARD_TOUCH_X_MAX         (560)
+#define BOARD_TOUCH_Y_MAX         (170)
+#define BOARD_TOUCH_SWAP_XY       (BOARD_LCD_ORIENT == BOARD_LCD_ORIENT_PORTRAIT)
+#define BOARD_TOUCH_MIRROR_X      (BOARD_LCD_ORIENT == BOARD_LCD_ORIENT_ROTATE270)
+#define BOARD_TOUCH_MIRROR_Y      (BOARD_LCD_ORIENT != BOARD_LCD_ORIENT_ROTATE90)
+
+#define BOARD_LCD_PIXEL_CLK_HZ    (40 * 1000 * 1000)
+
+#define BOARD_PIN_LCD_RST         (GPIO_NUM_16)
+#define BOARD_PIN_LCD_SCLK        (GPIO_NUM_15)
+#define BOARD_PIN_LCD_DC          (GPIO_NUM_14)
+#define BOARD_PIN_LCD_CS          (GPIO_NUM_47)
+#define BOARD_PIN_LCD_DATA0       (GPIO_NUM_13)
+#define BOARD_PIN_LCD_DATA1       (GPIO_NUM_12)
+#define BOARD_PIN_LCD_DATA2       (GPIO_NUM_11)
+#define BOARD_PIN_LCD_DATA3       (GPIO_NUM_10)
+#define BOARD_PIN_LCD_TE          (GPIO_NUM_9)
+#define BOARD_PIN_LCD_BL          (GPIO_NUM_38)
+
+#define BOARD_PIN_TOUCH_INT       (GPIO_NUM_39)
+#define BOARD_PIN_TOUCH_SDA       (GPIO_NUM_40)
+#define BOARD_PIN_TOUCH_SCL       (GPIO_NUM_41)
+#define BOARD_PIN_TOUCH_RST       (GPIO_NUM_42)

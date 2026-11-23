@@ -1,0 +1,8 @@
+version: 1.0.0
+description: OSPTEK boot animation for LVGL
+dependencies:
+  lvgl/lvgl:
+    public: true
+    version: ^9.6
+  idf:
+    version: '>=5.5.0'
