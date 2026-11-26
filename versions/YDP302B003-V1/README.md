@@ -47,6 +47,7 @@
 | 规格文档 | [`YDP302B003-V1.pdf`](./datasheets/YDP302B003-V1.pdf) |
 | CAD 图纸 | [`YDP302B003-V1.dwg`](./cad/YDP302B003-V1.dwg) |
 | CAD 图纸 | [`YDP302B003-V1_外形图.pdf`](./cad/YDP302B003-V1_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
+| 转接板资料 | [`3.02寸屏幕测试板V1.1.step`](./adapter/3.02%E5%AF%B8%E5%B1%8F%E5%B9%95%E6%B5%8B%E8%AF%95%E6%9D%BFV1.1.step) |
 | 转接板资料 | [`PCB-3.02 TFT转接板V2.0.pdf`](./adapter/PCB-3.02%20TFT%E8%BD%AC%E6%8E%A5%E6%9D%BFV2.0.pdf) |
 
 ## 仓库结构
